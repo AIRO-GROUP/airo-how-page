@@ -35,13 +35,12 @@ export const siteConfig = {
       ]
     }
   },
-  flavorGuide: {
-    title: "Flavor Guide",
-    description: "Customize your flavor intensity.",
+  dosingGuide: {
+    title: "How Much to Use",
+    description: "Get the perfect flavor balance for your bottle size.",
     cards: [
-      { level: "Light Flavor", description: "A subtle hint of taste." },
-      { level: "Medium Flavor", description: "Our recommended perfect balance.", recommended: true },
-      { level: "Strong Flavor", description: "Bold and vibrant taste." }
+      { volume: "300ml Water", dose: "4ml of Liquid", action: "1 Squeeze" },
+      { volume: "600ml Water", dose: "8ml of Liquid", action: "2 Squeezes" }
     ]
   },
   tips: [

@@ -6,7 +6,7 @@ import { Hero } from "@/components/Hero";
 import { ProductSelection } from "@/components/ProductSelection";
 import { VideoSection } from "@/components/VideoSection";
 import { Instructions } from "@/components/Instructions";
-import { FlavorGuide } from "@/components/FlavorGuide";
+import { DosingGuide } from "@/components/DosingGuide";
 import { HelpfulTips } from "@/components/HelpfulTips";
 import { FAQ } from "@/components/FAQ";
 import { BottomCTA } from "@/components/BottomCTA";
@@ -48,7 +48,7 @@ export function HowClient() {
         <Instructions selectedProduct={selectedProduct} />
       </motion.div>
 
-      <FlavorGuide />
+      <DosingGuide />
       <HelpfulTips />
       <FAQ />
       <BottomCTA />
