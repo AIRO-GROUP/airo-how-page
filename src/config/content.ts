@@ -87,18 +87,18 @@ export const siteConfig = {
     headline: "Want to Learn More About AIRO?",
     text: "Explore every flavor, ingredients, benefits, and where to buy AIRO.",
     primaryButton: {
-      text: "Visit drinkairo.com",
-      url: "https://www.drinkairo.com"
+      text: "Visit Website",
+      url: "#"
     },
     secondaryButton: {
       text: "Shop AIRO",
-      url: "https://www.drinkairo.com/shop"
+      url: "#"
     }
   },
   nav: [
     { label: "Squeezer", target: "squeezer" },
     { label: "Twist Cap", target: "twist" },
     { label: "FAQ", target: "faq" },
-    { label: "Visit Website", target: "https://www.drinkairo.com" }
+    { label: "Visit Website", target: "#" }
   ]
 };
