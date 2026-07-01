@@ -45,13 +45,13 @@ export function FloatingNav({ onSelect }: { onSelect?: (id: string) => void }) {
           transition={{ duration: 0.3 }}
           className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 px-4 pointer-events-none"
         >
-          <nav className="bg-background/80 backdrop-blur-xl border border-foreground/10 rounded-full px-2 py-2 flex items-center gap-1 shadow-lg pointer-events-auto">
+          <nav className="flex items-center gap-1 p-2 bg-brand-card/80 backdrop-blur-md border border-brand-border rounded-full shadow-lg mx-auto w-fit pointer-events-auto">
             {siteConfig.nav.map((item, index) => (
               <a
                 key={index}
                 href={item.target.startsWith('http') ? item.target : `#${item.target}`}
                 onClick={(e) => handleClick(e, item)}
-                className="px-4 py-2 rounded-full text-sm font-medium text-foreground/80 hover:bg-foreground/5 hover:text-foreground transition-colors"
+                className="px-4 py-2 rounded-full text-sm font-medium transition-colors text-brand-muted hover:text-brand-navy hover:bg-brand-bg"
                 target={item.target.startsWith('http') ? "_blank" : "_self"}
                 rel={item.target.startsWith('http') ? "noopener noreferrer" : ""}
               >

@@ -25,12 +25,12 @@ export function Instructions({ selectedProduct }: InstructionsProps) {
             {product.instructions.map((step, index) => (
               <div 
                 key={index}
-                className="flex items-start p-6 rounded-2xl bg-foreground/5 hover:bg-foreground/10 transition-colors"
+                className="flex items-start p-6 rounded-2xl bg-brand-card shadow-sm border border-brand-border hover:shadow-md transition-all"
               >
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-foreground text-background flex items-center justify-center font-bold mr-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-navy text-white flex items-center justify-center font-bold mr-4">
                   {index + 1}
                 </div>
-                <p className="text-lg pt-0.5">{step}</p>
+                <p className="text-lg pt-0.5 text-brand-muted">{step}</p>
               </div>
             ))}
           </div>

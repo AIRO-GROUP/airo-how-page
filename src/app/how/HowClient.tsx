@@ -32,7 +32,12 @@ export function HowClient() {
       <ProductSelection selectedProduct={selectedProduct} onSelect={handleSelectProduct} />
       
       {/* Dynamic Content Based on Selection */}
-      <div className="bg-foreground/[0.02] py-8 rounded-[3rem] mx-4 md:mx-10 mb-16 border border-foreground/5">
+      <motion.div 
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="mt-16 bg-transparent"
+      >
         {!selectedProduct && (
           <div className="text-center py-20 text-foreground/50">
             <p className="text-xl">Please select a product above to view instructions.</p>

@@ -24,11 +24,11 @@ export function FAQ() {
           return (
             <div 
               key={index}
-              className="border border-foreground/10 rounded-2xl overflow-hidden bg-foreground/5"
+              className="border border-brand-border rounded-2xl overflow-hidden bg-brand-card shadow-sm"
             >
               <button
                 onClick={() => toggle(index)}
-                className="w-full flex justify-between items-center p-6 text-left hover:bg-foreground/5 transition-colors focus:outline-none"
+                className="w-full flex justify-between items-center p-6 text-left hover:bg-brand-bg transition-colors focus:outline-none"
               >
                 <span className="text-lg font-medium pr-4">{item.question}</span>
                 <ChevronDown 
@@ -44,7 +44,7 @@ export function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="px-6 pb-6 text-foreground/70">
+                    <div className="px-6 pb-6 text-brand-muted">
                       {item.answer}
                     </div>
                   </motion.div>

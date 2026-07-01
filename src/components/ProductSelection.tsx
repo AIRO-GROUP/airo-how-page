@@ -30,11 +30,11 @@ export function ProductSelection({ selectedProduct, onSelect }: ProductSelection
               transition={{ duration: 0.6, delay: index * 0.2 }}
               onClick={() => onSelect(product.id)}
               className={cn(
-                "relative group cursor-pointer rounded-3xl overflow-hidden p-8 transition-all duration-500 border border-foreground/5 bg-foreground/5",
-                isSelected ? "ring-2 ring-foreground bg-foreground/10" : "hover:bg-foreground/10"
+                "relative group cursor-pointer rounded-3xl overflow-hidden p-8 transition-all duration-500 border bg-brand-card",
+                isSelected ? "ring-2 ring-brand-navy border-brand-navy shadow-md" : "border-brand-border shadow-sm hover:shadow-md hover:border-brand-navy/30"
               )}
             >
-              <div className="aspect-[4/5] relative mb-6 rounded-2xl overflow-hidden bg-white/50">
+              <div className="aspect-[4/5] relative mb-6 rounded-2xl overflow-hidden bg-transparent">
                 <Image
                   src={product.image}
                   alt={product.name}
@@ -44,13 +44,13 @@ export function ProductSelection({ selectedProduct, onSelect }: ProductSelection
               </div>
               <div className="text-center">
                 <h3 className="text-2xl font-semibold mb-3">{product.name}</h3>
-                <p className="text-foreground/70 mb-6">{product.description}</p>
+                <p className="text-brand-muted mb-6">{product.description}</p>
                 <button 
                   className={cn(
                     "px-6 py-3 rounded-full font-medium transition-colors w-full sm:w-auto",
                     isSelected 
-                      ? "bg-foreground text-background" 
-                      : "bg-foreground/10 text-foreground group-hover:bg-foreground group-hover:text-background"
+                      ? "bg-brand-navy text-white" 
+                      : "bg-brand-bg text-brand-navy group-hover:bg-brand-navy group-hover:text-white"
                   )}
                 >
                   {product.buttonText}

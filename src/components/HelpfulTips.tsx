@@ -10,10 +10,10 @@ export function HelpfulTips() {
         {tips.map((tip, index) => (
           <div 
             key={index}
-            className="flex items-center p-6 rounded-2xl bg-foreground/5 hover:bg-foreground/10 transition-colors"
+            className="flex items-center p-6 rounded-2xl bg-brand-card shadow-sm border border-brand-border hover:shadow-md transition-all"
           >
-            <CheckCircle2 className="w-6 h-6 text-foreground mr-4 flex-shrink-0" />
-            <span className="text-lg font-medium">{tip}</span>
+            <CheckCircle2 className="w-6 h-6 text-brand-navy mr-4 flex-shrink-0" />
+            <span className="text-lg font-medium text-brand-muted">{tip}</span>
           </div>
         ))}
       </div>
