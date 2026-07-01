@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { Hero } from "@/components/Hero";
 import { ProductSelection } from "@/components/ProductSelection";
 import { VideoSection } from "@/components/VideoSection";
@@ -45,7 +46,7 @@ export function HowClient() {
         )}
         <VideoSection selectedProduct={selectedProduct} />
         <Instructions selectedProduct={selectedProduct} />
-      </div>
+      </motion.div>
 
       <FlavorGuide />
       <HelpfulTips />
