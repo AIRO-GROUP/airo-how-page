@@ -46,7 +46,7 @@ export const siteConfig = {
   tips: [
     "Best served chilled",
     "Shake before drinking",
-    "Works best with approximately 250–750 mL of water",
+    "Works best with 300–600 mL of water",
     "Enjoy anytime during the day"
   ],
   faq: {
