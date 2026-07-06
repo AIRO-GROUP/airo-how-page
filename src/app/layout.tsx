@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "Add AIRO to your water with a simple squeeze or twist.",
 };
 
+import { GlobalFooter } from "@/components/GlobalFooter";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -13,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased scroll-smooth">
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <GlobalFooter />
+      </body>
     </html>
   );
 }
